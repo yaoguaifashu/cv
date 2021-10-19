@@ -9,10 +9,14 @@
 # General
 --------------------------------------------------------------*/
 body {
-/* 右边小字体颜色 蓝黑色 */
+/* 右边主体小字体颜色 灰色 */
 
-  font-family: "Open Sans", sans-serif;
-  color: #3D3D3D;
+/* font-family: "Open Sans", sans-serif;*/
+/*打字机字体 Courier */
+  font-family: futura;
+/*  color: #3D3D3D;*/
+  color:#565656;
+  font-weight: 100;
 
 /*    color: #f0f5ff;
 */
@@ -22,7 +26,7 @@ a {
 /* 天蓝色小字体颜色 */
 /*  color: #149ddd;
 */
-  color: #62c0b4;
+  color: #e2f7fc;
   text-decoration: none;
 }
 
@@ -34,7 +38,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+   font-family: futura;
+   font-weight: 50;
 }
 
 /*--------------------------------------------------------------
@@ -48,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #62c0b4;
+  background: #7393B3;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -63,7 +68,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #e4a498;
+/* background: #e4a498; */
+  background: #0f4c81;
   transition: background 0.2s ease-in-out;
 }
 
@@ -93,15 +99,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 120px;
   border: 0px solid #2c2f3f;
 }
-
+/*左栏名字*/
 #header .profile h1 {
   font-size: 24px;
   margin: 0;
   padding: 0;
-  font-weight: 600;
+  font-weight: 500;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+/*  font-family: "Poppins", sans-serif;*/
+  font-family: futura;
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
@@ -132,12 +139,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main {
-  margin-left: 300px;
+  margin-left: 310px;
 }
 
 @media (max-width: 1199px) {
   #header {
-    left: -300px;
+    left: -310px;
   }
   #main {
     margin-left: 0;
@@ -166,13 +173,13 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: #3d3d3d;
+  color: #808080;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 17px;
 }
-
+/*图标*/
 .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
@@ -181,12 +188,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   text-decoration: none;
-  color: #c28876;
+  color: #576F87;
 }
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
-  color: #e4a498;
-  font-size: 200%;
+  color: #576F87;
+  font-size: 180%;
 }
 
 /* Mobile Navigation */
@@ -218,8 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color:#e4a498;
-  font-size: 200%;
+  color:#576F87;
 }
 
 /*--------------------------------------------------------------
@@ -228,10 +234,11 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/flowpattern.jpeg") top center;
   background-size: cover;
 }
 
+/*主体照片背景灰度*/
 #hero:before {
   content: "";
   background: rgba(5, 13, 24, 0.3);
@@ -249,26 +256,32 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 300px;
 }
 
+/*名字简介*/
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
-  font-weight: 700;
+  font-size: 55px;
+  font-weight: 600;
   line-height: 56px;
   color: #fff;
+  padding-left: 3.5em;
+  font-family: futura;
+
 }
 
 #hero p {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+/*  font-family: "Poppins", sans-serif; */
+  font-family: futura;
+  padding-left: 7.5em;
 }
 
 #hero p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #62c0b4;
+  border-bottom: 3px solid #e7edf7;
 }
 
 @media (min-width: 1024px) {
@@ -293,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 60px 30px;
   overflow: hidden;
 }
 
@@ -302,40 +315,52 @@ section {
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 60px;
   padding-bottom: 20px;
   position: relative;
-  color: 	#498f86;
+  color: 	#7393B3;
 }
-
+/*标题下横线*/
 .section-title h2::after {
   content: '';
   position: absolute;
   display: block;
   width: 50px;
   height: 3px;
-  background: #62c0b4;
+  background: #002366;
   bottom: 0;
   left: 0;
 }
 
-.section-title p {
-  margin-bottom: 0;
+.section-title row{
+
+ padding-up: 10px;
+ padding-bottom: 40px;
+
 }
 
+.section-title p {
+  margin-bottom: 30;
+}
+
+.about .container p {
+  margin-bottom: 40px;
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
-  color: #498f86;
+  font-size: 35px;
+  color: #7393B3;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .about .content ul {
@@ -357,6 +382,8 @@ section {
   margin-bottom: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -372,7 +399,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: 	#62c0b4;
+  color: 	#7393B3;
   float: left;
 }
 
@@ -441,7 +468,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #62c0b4;
+  background-color: #7393B3;
 }
 
 /*--------------------------------------------------------------
@@ -452,13 +479,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #498f86;
+  color: #7393B3;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #62c0b4;
+  border-left: 2px solid #002366;
   position: relative;
 }
 
@@ -467,8 +494,8 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #498f86;
+  font-family: futura;
+  color: #002366;
   margin-bottom: 10px;
 }
 
@@ -478,7 +505,7 @@ section {
   background: #e4edf9;
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
@@ -503,7 +530,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #62c0b4;
+  border: 2px solid #002366;
 }
 
 /*--------------------------------------------------------------
@@ -1080,25 +1107,26 @@ section {
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #f4f6fd;
+  color: #fff;
   font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #b3c3d8;
+  background: #e2f7fc;
 }
 
 #footer .copyright {
   text-align: center;
+  color: #e2f7fc;
 }
 
 #footer .credits {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: #eaebf0;
+  color: #e2f7fc;
 }
 
 @media (max-width: 1199px) {
